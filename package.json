@@ -1,0 +1,34 @@
+{
+    "name": "@ivan_georgiew/prettier-config",
+    "version": "1.0.0",
+    "description": "My sane prettier config",
+    "private": false,
+    "main": "index.js",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "require": "./index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "preversion": "pnpm i && git add -A",
+        "postversion": "git push && pnpm publish",
+        "bump": "pnpm version patch",
+        "bigbump": "pnpm version minor"
+    },
+    "keywords": [
+        "prettier",
+        "prettierconfig",
+        "prettier-config"
+    ],
+    "author": "Ivan Georgiev <ivan_georgiew@yahoo.com>",
+    "license": "MIT",
+    "repository": "github:ivangeorgiew/prettier-config",
+    "bugs": "https://github.com/ivangeorgiew/prettier-config/issues",
+    "homepage": "https://github.com/ivangeorgiew/prettier-config#readme",
+    "dependencies": {
+        "prettier": "^2.3.2"
+    }
+}

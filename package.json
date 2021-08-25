@@ -28,7 +28,10 @@
     "repository": "github:ivangeorgiew/prettier-config",
     "bugs": "https://github.com/ivangeorgiew/prettier-config/issues",
     "homepage": "https://github.com/ivangeorgiew/prettier-config#readme",
-    "dependencies": {
+    "peerDependencies": {
+        "prettier": ">= 2.3.2"
+    },
+    "devDependencies": {
         "prettier": "^2.3.2"
     }
 }

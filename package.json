@@ -1,6 +1,6 @@
 {
     "name": "@ivan_georgiew/prettier-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "My sane prettier config",
     "private": false,
     "main": "index.js",
@@ -14,7 +14,7 @@
     "scripts": {
         "preinstall": "npx only-allow pnpm",
         "preversion": "pnpm i && git add -A",
-        "postversion": "git push && pnpm publish",
+        "postversion": "git push && pnpm publish --access public",
         "bump": "pnpm version patch",
         "bigbump": "pnpm version minor"
     },

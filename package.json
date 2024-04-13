@@ -25,7 +25,10 @@
     ],
     "author": "Ivan Georgiev <ivan_georgiew@yahoo.com>",
     "license": "MIT",
-    "repository": "github:ivangeorgiew/prettier-config",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ivangeorgiew/prettier-config.git"
+    },
     "bugs": "https://github.com/ivangeorgiew/prettier-config/issues",
     "homepage": "https://github.com/ivangeorgiew/prettier-config#readme",
     "peerDependencies": {
